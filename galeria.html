@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibe Visual - Estilos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="galeria_styles.css">
+    <link rel="stylesheet" href="popup_styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">  
+    <script src="galeria_script.js"></script>
+    <script src="script.js"></script> <!-- Para POPUP -->
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="item-a">
+            <div class="logo">
+              <!-- Your logo image with a link -->
+              <a href="index.html"><img id="logo" src="media/VibeVisual_logo.png" alt="Vibe Visual logotipo"></a>
+            </div>
+              <div class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <nav class="navbar">
+                <div class="close-menu">&times;</div>
+                <a href="galeria.html">Galeria</a>
+                <a href="index.html#about">Sobre Nós</a>
+                <a href="#" class="popup-trigger" data-popup="#contact-popup">Contacte-nos</a>
+                <a href="#" class="popup-trigger" data-popup="#sessao-popup">Iniciar Sessão</a>
+            </nav>
+          
+            
+          </div>
+
+            
+        
+            <!-- Content Space -->
+            <div class="content">
+                <!-- Breadcrumbs -->
+                <div class="breadcrumbs">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-easel">
+                        <path d="M11.7935 10.7934L20.4603 3.45681C20.7653 3.19859 21.2173 3.21734 21.5 3.49992C21.7826 3.78253 21.8013 4.23461 21.5431 4.53966L14.2065 13.2064M11.7935 10.7934L9.58785 12.6605C8.7162 13.3984 8.66122 14.7236 9.46875 15.5311C10.2763 16.3386 11.6015 16.2837 12.3393 15.412L14.2065 13.2064M11.7935 10.7934L14.2065 13.2064M10.3398 17.75C10.3398 19.5449 8.88477 21 7.08984 21H2.5L2.7103 20.8948C3.74629 20.3768 4.26276 19.1914 3.93667 18.0799C3.87245 17.8611 3.83395 17.6334 3.85777 17.4066C4.02929 15.7731 5.41089 14.5 7.08984 14.5C8.88477 14.5 10.3398 15.955 10.3398 17.75Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    <a id="homebread" href="index.html">Home</a>
+                    <p class="bread-separation">//</p>
+                    <a href="#">Galeria</a>
+                </div>
+                <div class="content-text">
+                    <p>Descubra obras de arte exclusivas de artistas em Portugal!</p>
+                </div>
+                <div class="content-image">
+                    <img src="media/Galeria.png" alt="mulher sentada num banco de museu, de costas para a camera, a olhar para obras de arte.">
+                </div>
+            </div>
+
+
+        <!-- Accordion 1 -->
+        <div class="accordion">
+            <div class="accordion-header">
+                <button class="accordion-btn">X</button>
+                <span class="accordion-toggle">Pintura</span>
+                <svg class="separator" width="100%" height="1" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="10" y1="0.5" x2="100%" y2="0" stroke="#000"/>
+                </svg>
+            </div>
+            <div class="accordion-content expanded">
+                <div class="image-grid">
+                    <!-- Row 1 -->
+                    <div class="image-item" onclick="window.location.href='galeria_display.html'">
+                        <h4>Acrílico</h4>
+                        <div class="green">Try me!</div>
+                        <img src="media/acrilico_galeria.png" alt="acrilico">
+                    </div>
+                
+                    <div class="image-item" onclick="window.location.href='galeria_display.html'">
+                        <h4>Aerografia</h4>
+                        <img src="media/aeorografia_galeria.png" alt="Aerografia">
+                    </div>
+                
+                    <div class="image-item" onclick="window.location.href='galeria_display.html'">
+                        <h4>Aguarela</h4>
+                        <img src="media/aguarela_galeria.png" alt="aguarela">
+                    </div>
+                
+                    <div class="image-item" onclick="window.location.href='galeria_display.html'">
+                        <h4>Gouache</h4>
+                        <img src="media/gouache_galeria.png" alt="gouache">
+                    </div>
+                
+                    <div class="image-item" onclick="window.location.href='galeria_display.html'">
+                        <h4>Óleo</h4>
+                        <img src="media/oleo_galeria.png" alt="oleo">
+                    </div>
+                
+                    <div class="image-item" onclick="window.location.href='galeria_display.html'">
+                        <h4>Pastel</h4>
+                        <img src="media/pastel_galeria.png" alt="pastel">
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- Accordion 2 -->
+        <div class="accordion">
+            <div class="accordion-header">
+                <button class="accordion-btn">X</button>
+                <span class="accordion-toggle">Desenho</span>
+                <svg class="separator" width="100%" height="1" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="10" y1="0.5" x2="100%" y2="0" stroke="#000"/>
+                </svg>
+            </div>
+            <div class="accordion-content expanded">
+                <div class="image-grid">
+                    <!-- Row 2 -->
+                    <div class="image-item" onclick="window.location.href='galeria_display.html'">
+                        <h4>Carvão</h4>
+                        <img src="media/carvao_galeria.png" alt="carvao">
+                    </div>
+                
+                    <div class="image-item" onclick="window.location.href='galeria_display.html'">
+                        <h4>Grafite</h4>
+                        <div class="green">Try me!</div>
+                        <img src="media/grafite_galeria.png" alt="grafite">
+                    </div>
+                
+                    <div class="image-item" onclick="window.location.href='galeria_display.html'">
+                        <h4>Lápis de Cor</h4>
+                        <img src="media/lapiscor_galeeria.png" alt="lapis de cor">
+                    </div>
+                
+                    <div class="image-item" onclick="window.location.href='galeria_display.html'">
+                        <h4>Lápis de Pastel</h4>
+                        <img src="media/lapispastel_galeria.png" alt="lapis de pastel">
+                    </div>
+                
+                    <div class="image-item" onclick="window.location.href='galeria_display.html'">
+                        <h4>Marcador</h4>
+                        <img src="media/marcador_galeria.png" alt="marcador">
+                    </div>
+                
+                    <div class="image-item" onclick="window.location.href='galeria_display.html'">
+                        <h4>Tinta</h4>
+                        <img src="media/tinta_galeria.png" alt="tinta">
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- Accordion 3 -->
+        <div class="accordion">
+            <div class="accordion-header">
+                <button class="accordion-btn">X</button>
+                <span class="accordion-toggle">Artesanato</span>
+                <svg class="separator" width="100%" height="1" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="10" y1="0.5" x2="100%" y2="0" stroke="#000"/>
+                </svg>
+            </div>
+            <div class="accordion-content expanded">
+                <div class="image-grid">
+                    <!-- Row 3 -->
+                    <div class="image-item" onclick="window.location.href='galeria_display.html'">
+                        <h4>Artes Texteis</h4>
+                        <img src="media/artetextil_galeria.png" alt="arte textil">
+                    </div>
+                
+                    <div class="image-item" onclick="window.location.href='galeria_display.html'">
+                        <h4>Bijuteria</h4>
+                        <img src="media/jewel_galeria.png" alt="joalharia">
+                    </div>
+                
+                    <div class="image-item" onclick="window.location.href='galeria_display.html'">
+                        <h4>Cerâmica e Olaria</h4>
+                        <img src="media/ceramica_galeria.png" alt="ceramica e olaria">
+                    </div>
+                
+                    <div class="image-item" onclick="window.location.href='galeria_display.html'">
+                        <h4>Escultura</h4>
+                        <img src="media/escultura_galeria.png" alt="escultura">
+                    </div>
+                
+                    <div class="image-item" onclick="window.location.href='galeria_display.html'">
+                        <h4>Velas</h4>
+                        <img src="media/velas_galeria.png" alt="velas">
+                    </div>
+                
+                    <div class="image-item" onclick="window.location.href='galeria_display.html'">
+                        <h4>Gravura</h4>
+                        <img src="media/gravura_galeria.png" alt="gravura">
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- Accordion 4 -->
+        <div class="accordion">
+            <div class="accordion-header">
+                <button class="accordion-btn">X</button>
+                <span class="accordion-toggle">Digital</span>
+                <svg class="separator" width="100%" height="1" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="10" y1="0.5" x2="100%" y2="0" stroke="#000"/>
+                </svg>
+            </div>
+            <div class="accordion-content expanded">
+                <div class="image-grid">
+                    <!-- Row 4 -->
+                    <div class="image-item" data-link="galeria_display.html">
+                        <h4>Arte 3D</h4>
+                        <img src="media/3d_galeria.png" alt="3d">
+                    </div>
+                
+                    <div class="image-item" onclick="window.location.href='galeria_display.html'">
+                        <h4>Conceptual</h4>
+                        <img src="media/concept_galeria.png" alt="arte conceptual">
+                    </div>
+                
+                    <div class="image-item" onclick="window.location.href='galeria_display.html'">
+                        <h4>Fotografia</h4>
+                        <img src="media/fotografia_galeria.png" alt="fotografia">
+                    </div>
+                
+                    <div class="image-item" onclick="window.location.href='galeria_display.html'">
+                        <h4>Pintura e Desenho</h4>
+                        <img src="media/pd_galeria.png" alt="pintura e desenhos digital">
+                    </div>
+                
+                    <div class="image-item" onclick="window.location.href='galeria_display.html'">
+                        <h4>Pixel</h4>
+                        <img src="media/pixel_galeria.png" alt="pixel">
+                    </div>
+                
+                    <div class="image-item" onclick="window.location.href='galeria_display.html'">
+                        <h4>Vetores</h4>
+                        <img src="media/vetores_galeria.png" alt="vetores">
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+            <!-- Popup Contact Form -->
+    <div id="contact-popup" class="popup">
+        <div class="popup-content">
+          <span class="close">&times;</span>
+          <h3>Tem Questões?</h3>
+            <h4>Nós temos as respostas! Entre em contacto com a nossa equipa.</h4>
+          <form id="contact-form">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+      </div>
+       
+         <!-- "sessao-popup -->
+         <div id="sessao-popup" class="popup">
+          <div class="popup-content sessao-content">
+            <button class="close">Close</button>
+            <div class="form">
+              <div class="title">Bem vindo de volta!</div>
+              <div class="subtitle">Iniciar a sua sessão</div>
+              <div class="input-container ic1">
+                <input id="email" class="input" type="text" placeholder=" " required/>
+                <div class="cut cut-short"></div>
+                <label for="email" class="placeholder">Email</label>
+              </div>
+              <div class="input-container ic2">
+                <input type="password" class="input" name="pwd" placeholder=" " /> 
+                <div class="cut"></div>
+                <label for="pwd" class="placeholder">Password</label>
+              </div>
+              <button type="button" class="submeter">Iniciar Sessão</button>
+            </div>
+          </div>
+        </div>
+
+        
+
+        <!-- Popup Overlay -->
+        <div class="popup-overlay"></div>
+
+    </div>
+    <div>
+        <footer class="footer">
+            <div class="footer-content container">
+              <div class="footer-social-links">
+                <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+              </div>
+              <a href="#" class="popup-trigger" data-popup="#contact-popup">Contacte-nos</a>
+      
+              <div class="footer-info">
+                <p>&copy; 2024 Vibe Visual. All Rights Reserved.</p>
+                <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+              </div>
+            </div>
+          </footer>
+</body>
+</html>

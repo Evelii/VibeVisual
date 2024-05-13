@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibe Visual ◦ Rede Social de Arte </title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="popup_styles.css"> <!-- POP UPS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="item-a">
+          <div class="logo">
+            <a href="index.html"><img id="logo" src="media/VibeVisual_logo.png" alt="Vibe Visual logotipo"></a>
+          </div>
+            <div class="hamburger-menu">
+              <span></span>
+              <span></span>
+              <span></span>
+          </div>
+          
+          <nav class="navbar">
+              <div class="close-menu">&times;</div>
+              <a href="galeria.html">Galeria</a>
+              <a href="index.html#about">Sobre Nós</a>
+              <a href="#" class="popup-trigger" data-popup="#contact-popup">Contacte-nos</a>
+              <a href="#" class="popup-trigger" data-popup="#sessao-popup">Iniciar Sessão</a>
+          </nav>
+        
+          
+        </div>
+        <div class="item-b">
+            <h1 id="slogan">A Arte <br> fala por si.</h1>
+            <h4 id="slogan_quote">A galeria e rede social para artistas e amantes de arte!</h4>
+            <div class="subgrid">
+                <div class="subgrid-item">
+                    <button onclick="location.href='#about';">Sobre Nós</button>
+                </div>
+                <div class="subgrid-item">
+                  <button class="popup-trigger" data-popup="#sessao-popup">Iniciar Sessão</button>
+                </div>
+                <div class="subgrid-item criar-conta">
+                  <button class="popup-trigger" data-popup="#criar-conta-popup">Criar Conta</button>
+                </div>
+            </div>    
+        </div>
+        <div class="item-c">
+            <img id="artwork" src="media/VibeVisual_homepage.png" alt="pintura a oleo da parte de baixo de um rosto">
+            <div class="rectangle"></div>
+        </div>
+    </div>
+
+    <!-- Reviews -->
+    <div class="reviews-container">
+      <div class="arrow arrow-left">&#8249;</div>
+      <div class="review">
+          <img src="media/VV_profilepic_user1.png" alt="Review 1">
+          <p class="quote">"A Vibe Visual foi a minha descoberta do ano! Encontrei artistas incríveis e obras que realmente mexeram comigo. Estou ansiosa por mais!"</p>
+      </div>
+      <div class="review">
+          <img src="media/VV_profilepic_user4.png" alt="Review 2">
+          <p class="quote">"Esta plataforma tornou-se o meu lugar favorito para descobrir talentos emergentes. Comprei várias peças e não podia estar mais satisfeita!"</p>
+      </div>
+      <div class="review">
+          <img src="media/VV_profilepic_user3.png" alt="Review 3">
+          <p class="quote">"Como artista, encontrar um espaço onde posso partilhar a minha arte com uma comunidade tão apaixonada e dedicada tem sido uma experiência incrível."</p>
+      </div>
+      <div class="review">
+          <img src="media/VV_profilepic_user2.png" alt="Review 4">
+          <p class="quote">"O Vibe Visual não é apenas uma galeria, é um ponto de encontro para amantes da arte. Encontrei inspiração e conexões valiosas aqui."</p>
+      </div>
+      <div class="review">
+          <img src="media/VV_profilepic_user5.png" alt="Review 5">
+          <p class="quote">"Recomendo vivamente o Vibe Visual a todos os que querem mergulhar no mundo da arte em Portugal. Uma plataforma verdadeiramente única!"</p>
+        </div>
+      <div class="arrow arrow-right">&#8250;</div>  
+    </div>
+
+    <div class="item-d">
+        <h2>Vibe Visual</h2>
+        <h3>O ponto de encontro para inspirar e ser inspirado.</h3>
+        <div class="discover-grid">
+          <!--  Discover Item Esquerdo -->
+          <div class="discover-item">
+            <img class="left" src="media/artista.png" alt="Left Image">
+            <p class="discover-title">Artista?</p>
+            <div class="discover-text">
+              <p>Vamos espalhar arte! <br>
+                Junte-se à nossa comunidade de criativos e prepare-se para destacar e partilhar o seu talento com o resto de Portugal!
+                <br><br>Clique abaixo para criar o seu perfil de artista e fazer parte deste movimento, onde vai poder encontrar clientes, conectar-se com outros artistas e inspirar-se!</p>
+                <button class="popup-trigger" data-popup="#criar-conta-popup">Criar Conta</button>
+            </div>
+          </div>
+          <!-- Discover Item Direito-->
+          <div class="discover-item">
+            <img class="right" src="media/artlooker.png" alt="Right Image">
+            <p class="discover-title">Apreciador?</p>
+            <div class="discover-text">
+              <p>Descubra a beleza da arte em Portugal! <br>
+                Na nossa galeria, vai encontrar obras de arte deslumbrantes de artistas talentosos por todo o país.
+                <br><br>Clique abaixo para criar o seu perfil de apreciador de arte, poder ter albuns com a sua arte favorita  e ficar a par das ultimas novidades dos artistas de que mais gosta!
+                </p>
+                <button class="popup-trigger" data-popup="#criar-conta-popup">Criar Conta</button>
+            </div>
+          </div>
+          <!-- Primeir Discover Item Horizontal-->
+          <div class="discover-item horizontal">  
+            <p class="discover-title">Ainda não está convencido?</p>
+            <div class="discover-text">
+              <p>
+                Explore a nossa galeria e deixe-se surpreender!<br> 
+                Descubra novos talentos, encontre obras que ressoem consigo e mergulhe no mundo vibrante da arte portuguesa.
+                <br>Dê uma vista de olhos e navege sem compromissos! </p>
+              <button onclick="location.href='galeria.html';">Exlporar a Galeria</button>
+            </div>
+          </div>
+          <!-- Segundo Discover Item Horizontal -->
+          <div class="discover-item horizontal second">  
+            <p class="discover-title" id="about">Sobre Nós</p>             
+            <div class="discover-text">
+              <p>Rede Social? Galeria de arte? Porque não ambos?
+                <br>No Vibe Visual, a nossa missão é celebrar e promover a arte em Portugal. Proporcionamos uma plataforma dinâmica onde os artistas podem mostrar as suas criações, conectar-se com outros criadores e alcançar um público mais amplo. 
+                Através da nossa comunidade inclusiva e das nossas funcionalidades inovadoras, pretendemos fomentar a criatividade, promover conexões significativas e inspirar a apreciação pelas diversas expressões artísticas em Portugal.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup Contact Form -->
+    <div id="contact-popup" class="popup">
+      <div class="popup-content">
+        <span class="close">&times;</span>
+        <h3>Tem Questões?</h3>
+          <h4>Nós temos as respostas! Entre em contacto com a nossa equipa.</h4>
+        <form id="contact-form">
+          <label for="name">Nome:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="message">Mensagem:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </div>
+
+        <!-- "Criar Conta" Popup -->
+      <div id="criar-conta-popup" class="popup">
+        <div class="popup-content criar-conta-content">
+          <button class="close">Close</button>
+          <div class="form">
+            <div class="title">Criar Conta</div>
+            <div class="subtitle">Crie a sua Conta!</div>
+            <div class="input-container ic1">
+              <input id="firstname" class="input" type="text" placeholder=" " required />
+              <div class="cut"></div>
+              <label for="firstname" class="placeholder">Primeiro Nome</label>
+            </div>
+            <div class="input-container ic2">
+              <input id="lastname" class="input" type="text" placeholder=" " required />
+              <div class="cut"></div>
+              <label for="lastname" class="placeholder">Apelido</label>
+            </div>
+            <div class="input-container ic2">
+              <input id="email" class="input" type="text" placeholder=" " required />
+              <div class="cut cut-short"></div>
+              <label for="email" class="placeholder">Email</label>
+            </div>
+            <div class="input-container ic2">
+              <input id="phone" class="input" type="text" placeholder="" required/>
+              <div class="cut cut-big"></div>
+              <label for="phone" class="placeholder">+351 Telemovél</label>
+            </div>
+            <button type="button" class="submit">Submeter</button>
+          </div>
+        </div>
+      </div>
+
+       <!-- "sessao-popup -->
+       <div id="sessao-popup" class="popup">
+        <div class="popup-content sessao-content">
+          <button class="close">Close</button>
+          <div class="form">
+            <div class="title">Bem vindo de volta!</div>
+            <div class="subtitle">Iniciar a sua sessão</div>
+            <div class="input-container ic1">
+              <input id="email" class="input" type="text" placeholder=" " required/>
+              <div class="cut cut-short"></div>
+              <label for="email" class="placeholder">Email</label>
+            </div>
+            <div class="input-container ic2">
+              <input type="password" class="input" name="pwd" placeholder=" " /> 
+              <div class="cut"></div>
+              <label for="pwd" class="placeholder">Password</label>
+            </div>
+            <button type="button" class="submeter">Iniciar Sessão</button>
+          </div>
+        </div>
+      </div>
+
+
+    <footer class="footer">
+      <div class="footer-content container">
+        <div class="footer-social-links">
+          <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+        </div>
+        <a href="#" class="popup-trigger" data-popup="#contact-popup">Contacte-nos</a>
+
+        <div class="footer-info">
+          <p>&copy; 2024 Vibe Visual. All Rights Reserved.</p>
+          <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Popup Overlay -->
+    <div class="popup-overlay"></div>
+
+
+  </body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="profilepage_styles.css">
+    <link rel="stylesheet" href="popup_styles.css"> <!-- POP UPS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="profilepage_script.js"></script>
+    <script src="script.js"></script>
+</head>
+
+
+
+    <body>
+        <div class="container">
+                <!-- Header -->
+                <div class="item-a">
+                    <div class="logo">
+                      <!-- Your logo image with a link -->
+                      <a href="index.html"><img id="logo" src="media/VibeVisual_logo.png" alt="Vibe Visual logotipo"></a>
+                    </div>
+                      <div class="hamburger-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    
+                    <nav class="navbar">
+                        <div class="close-menu">&times;</div>
+                        <a href="galeria.html">Galeria</a>
+                        <a href="#about">Sobre Nós</a>
+                        <a href="#" class="popup-trigger" data-popup="#contact-popup">Contacte-nos</a>
+                        <a href="#" class="popup-trigger" data-popup="#sessao-popup">Iniciar Sessão</a>
+                    </nav>
+                  
+                    
+                  </div>
+
+                <main class="main">
+                    <!-- First row: Banner -->
+                    <div class="banner">
+                        <!-- Banner content here -->
+                    </div>
+            
+                    <!-- Second row: Follow button and profile picture -->
+                    <div class="profile-info">
+                        <button class="follow-btn">Seguir</button>
+                        <div class="profile-picture">
+                            <img src="" alt="Profile Picture">
+                        </div>
+                        <button class="message-btn">Mensagem</button>
+                    </div>
+            
+                    <!-- Third row: Profile Name -->
+                    <div class="profile-name">
+                        <!-- Profile name here -->
+                    </div>
+            
+                    <!-- Fourth row: Personal description -->
+                    <div class="description">
+                        <!-- Description here -->
+                    </div>
+            
+                    <!-- Fifth row: Personal website -->
+                    <div class="website">
+                        <!-- Website link here -->
+                    </div>
+            
+                    <!-- Sixth row: Publications and Followers -->
+                    <div class="statistics">
+                        <div class="publicationsCount"></div>
+                        <div class="followersCount"></div>
+                    </div>
+
+        </div>
+                    <!-- Seventh row: Profile content buttons -->
+                    <div class="profile-content">
+                        <div class="left-btns">
+                            <button>Galeria pessoal</button>
+                            <button>Coleções</button>
+                        </div>
+                        <div class="right-btns">
+                            <button>Blog</button>
+                            <button>Gostos</button>
+                        </div>
+                    </div>
+            
+                    <!-- Eighth row: Grid of content and "Show more" button -->
+                    <div class="content-grid" id="content-grid">
+                        <!-- Content grid here -->
+                    </div>
+                    <button class="show-more-btn" id="show-more-btn">Mostrar mais</button>
+
+                </main>
+
+        </div>
+
+    </body>
+
+
+
+    <!-- Popup Contact Form -->
+    <div id="contact-popup" class="popup">
+      <div class="popup-content">
+        <span class="close">&times;</span>
+        <h3>Tem Questões?</h3>
+          <h4>Nós temos as respostas! Entre em contacto com a nossa equipa.</h4>
+        <form id="contact-form">
+          <label for="name">Nome:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="message">Mensagem:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </div>
+
+  
+       <!-- "sessao-popup -->
+       <div id="sessao-popup" class="popup">
+        <div class="popup-content sessao-content">
+          <button class="close">Close</button>
+          <div class="form">
+            <div class="title">Bem vindo de volta!</div>
+            <div class="subtitle">Iniciar a sua sessão</div>
+            <div class="input-container ic1">
+              <input id="email" class="input" type="text" placeholder=" " required/>
+              <div class="cut cut-short"></div>
+              <label for="email" class="placeholder">Email</label>
+            </div>
+            <div class="input-container ic2">
+              <input type="password" class="input" name="pwd" placeholder=" " /> 
+              <div class="cut"></div>
+              <label for="pwd" class="placeholder">Password</label>
+            </div>
+            <button type="button" class="submeter">Iniciar Sessão</button>
+          </div>
+        </div>
+      </div>
+  
+  
+  
+  
+      <footer class="footer">
+        <div class="footer-content container">
+          <div class="footer-social-links">
+            <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+          </div>
+          <a href="#" class="popup-trigger" data-popup="#contact-popup">Contacte-nos</a>
+  
+          <div class="footer-info">
+            <p>&copy; 2024 Vibe Visual. All Rights Reserved.</p>
+            <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+          </div>
+        </div>
+      </footer>
+    </body>
+    </html>
