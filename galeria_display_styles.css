@@ -2,16 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Rokkitt:wght@100;300;400;500;600;900&display=swap');
 
 
-/* CSS styles for the Gallery Page */
 
-/* Reset CSS */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Main container */
 .container {
     display: grid;
     grid-template-rows: auto auto auto;
@@ -22,7 +19,7 @@
     
 }
 
-/* Header */
+
 .header {
     grid-row: 1;
     grid-column: 1 / span 3;
@@ -95,8 +92,8 @@
 .breadcrumbs a {
     text-decoration: none;
     font-family: Merriweather, serif;
-    color: #504f4f; /* Text color */
-    margin-right: 5px; /* Add spacing between breadcrumb items */
+    color: #504f4f; 
+    margin-right: 5px; 
 }
 
 .breadcrumbs a:hover {
@@ -128,11 +125,13 @@
 
 .tags {
     margin-top: 20px; 
+    color: rgb(199, 199, 199);
 }
 
 .tags h3,
 .topicos h3 {
     margin-bottom: 10px; 
+    color: black;
 }
 
 h3{
@@ -144,6 +143,10 @@ h3{
     grid-column: 1 / span 3;
     padding-left: 2%;
 }
+#filtros h3{
+    text-align: left;
+}
+
 
 
 #filtros h3{
@@ -190,7 +193,7 @@ h2{
     padding-right: 5px;
 }
 
-/* Hide 'X' */
+/* esconde 'X' */
 .tag .x {
     display: none;
 }
@@ -255,7 +258,7 @@ a.user-link {
     text-decoration: none; 
     font-family: Poppins, sans-serif; 
     font-size: 17px;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 a.user-link:hover {
@@ -273,7 +276,6 @@ a.user-link:hover {
 .tag.tipo[data-tipo="Para Exibição"] {
     font-family: Merriweather, serif;
     font-size: 12px;
-    border-radius: 20%;
     padding: 1%;
 }
 
@@ -291,8 +293,8 @@ a.user-link:hover {
     background-color: #eebfca !important;
     font-family: Merriweather, serif;
     font-size: 11px;
-    border-radius: 15%;
-    padding: 2%;
+    padding: 1%;
+    color: black;
 }
 .grafite-background{
     background-color: #aeb5f2!important;
@@ -346,4 +348,10 @@ a.user-link:hover {
     font-size: 30px;
     margin: 0 40px;
     size: 90px;
+}
+.artwork-item h3{
+    font-weight: 500;
+}
+.user-link{
+    font-weight: 500;
 }
